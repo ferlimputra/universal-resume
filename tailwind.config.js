@@ -1,7 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: ["./index.html", "./src/**/*.css"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     /* For Letter size */
     screens: {
@@ -13,16 +13,6 @@ module.exports = {
       lg: "1079.5px",
       xl: "1280px",
     },
-    /* For A4 size */
-    // screens: {
-    //   screen: {'raw': 'screen'},
-    //   print: {'raw': 'print'},
-    //   xsm: '500px',
-    //   sm: '640px',
-    //   md: '811px',
-    //   lg: '1051px',
-    //   xl: '1280px',
-    // },
     extend: {
       fontFamily: {
         main: ["IBM Plex Sans", ...defaultTheme.fontFamily.sans],
